@@ -1,0 +1,16 @@
+p{
+    color: red;
+    font-size: 25px;
+}
+
+.morada{
+    color: purple;
+}
+
+#titulo{
+    font-size: 100px;
+}
+.clase22{
+    border: 2px solid blue;
+    text-decoration:underline;
+}

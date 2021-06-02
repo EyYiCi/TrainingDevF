@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cajero</title>
+</head>
+<body>
+    
+    <div class="contenedorAzul">
+        <div id="contenedorInfoUsuario" class="salidaDeInformacion"></div>
+
+        <!-- Inicio de login -->
+        
+        <div class="form">
+            <input id="inputUsuario" type="text" placeholder="Usuario" >
+            <input id="inputPassword" type="password" placeholder="Password">
+        </div>
+        <button id="botonValidarLogin"class="botonLogin">Ingresar</button>
+        
+
+        <!-- Fin de login -->
+
+        <!-- Inicio de opciones de cajero -->
+        <h2 id="nombreCliente" class="nombreCliente"></h2>
+
+        <div id="menuCajero" class="contenedorOpciones">
+           <div class="botones">
+                <button id="botonConsultarSaldo">Consultar saldo</button>
+                <button id="botonDepositar">Depositar</button>
+                <button id="botonRetirar">Retirar</button>
+           </div>
+        </div>
+
+        <button id="botonCerrarSesion" class="botonSalir">Salir</button>
+
+
+        <!-- Fin de opciones de cajero -->
+
+    </div>
+
+
+    <script src="./index.js"></script>
+</body>
+</html>

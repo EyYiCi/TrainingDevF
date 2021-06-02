@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Botones */
+.btn-primary{
+    background: #E60023;
+    color: #ffff;
+    outline: none;
+    border: none;
+    padding: 10px  20px;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    display:none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.btn-primary:hover{
+    background: #bd0521;
+}
+
+.card{
+    position: relative;
+    height: 300px;
+    width: 150px;
+    background: blue;
+}
+.card .img{
+    width:100%;
+    height:100%;
+}
+
+.card:hover .btn-primary{
+    display:block;
+}
+
+
+/* Navbar */
+.navbar{
+    display:flex;
+    justify-content:space-around;
+    background-color: #4E6DC8;
+}
+.opciones{
+    display:flex;
+}
+.logo{
+    height:32px;
+    width:32px;
+}
+
+.logo img{
+    width: 100%;
+    height:100%;
+    transition: all 300ms ease;
+}
+
+.logo img:hover{
+    transform: scale(1.2);
+}
+
+.button-inicio{
+    background-color: #000;
+    color: #fff;
+    height:32px;
+    width:64px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 30%;
+    margin-left: 10px;
+}
+
+.icono{
+    height:32px;
+    width:32px;
+}
+
+.icono img{
+    width: 100%;
+    height:100%;
+}
+
+.barra-busqueda{
+    display:flex;
+}
+
+
+.contenedor{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width:100%;
+}
+
+
+.img-general{
+    width:400px;
+    height:300px;
+}
+
+@media screen and (max-width:1200px){
+    .img-general{
+        width: 300px;
+    }
+}
+
+
+
+@media screen and (max-width: 800px){
+    .logo{
+        height:64px;
+        width:64px;
+    }
+    .navbar{
+        justify-content:center;
+        background: #0B2B8A;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+    .navbar{
+        flex-direction: column;
+        align-items:center;
+        background: #4E6DC8;
+    }
+
+    .img-general{
+        width: 200px;
+    }
+}
+@media screen and (max-width: 400px){
+    .navbar{
+        flex-direction: column;
+        align-items:center;
+        background: #4E6DC8;
+    }
+
+    .img-general{
+        width: 100%;
+    }
+}
